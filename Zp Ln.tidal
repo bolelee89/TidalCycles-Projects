@@ -1,0 +1,7 @@
+d1 $ s "stab(6,16) [stab*4]"  # speed "1 1.4 1.2" # cutoff (range 500 1000 $ sine) # gain 1.2 #triode 1 #room 0.5 #size 0.4
+
+d2 $ s "bd(3,8)*2" # n 6 # gain 1.
+
+d3 $ s "[hh(1,4)] [hh*4 hh hh] hh hh" #n 10 #gain (range 0.7 1 $ rand) #phaserrate 1 #phaserdepth 1 #triode 10
+
+d4 $ s "~ sn:2" # crush 3 # delay 0.2 # delayfb (range 0.2 0.6 $ rand) # delayt (range 0.1 0.6 $ rand) #room 0.2 #size 0.3 #gain 0.9
